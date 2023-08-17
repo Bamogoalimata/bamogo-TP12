@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "poppins" sans-serif;
+    /* background-color: red; */
+}
+section{
+background: linear-gradient(
+    136.16deg,
+    rgba(91, 135, 75, 0.97) 12.91%,
+    rgba(12, 55, 32, 0.87) 87.68%
+  );
+  height: 100vh;
+}
+section .container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  }
+  section .container header,
+section .container header .left{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section .container nav{
+  display: flex;
+  flex-direction: row;
+}
+section .container nav audio {
+  display:flex;
+  flex-direction:row ;
+}
+section .container nav a{
+  margin-left: 50px;
+  color: white;
+  font-size:14px;
+}
+section .container nav a:nth-child(5) {
+  font: weight 500px; 
+  border: 2px solid white ;
+  padding: 10px, 20px;
+  border-radius: 50px;
+}
+section .container .middle-content{
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+section .container .middle-content .left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+section .container .middle-content .left .imag::before {
+  content:"";
+  position:absolute;
+  background-image: url();
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+section .container .middle-content .left .imag {
+  position: relative;
+  z-index: 10;
+}
+
+section .container .middle-content .left .info {
+  position:absolute;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  left: 0;
+}
+
+section .container .middle-content .left .info .info-bloc-left{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  text-align: right;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+section .container .middle-content .left .info-bloc-left span:nth-child(1) {
+  /*The Living pumpkin */
+  
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100px;
+  
+}
+section .container .middle-content .left .info-bloc-left span:nth-child(2) {
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section .container .middle-content .right{
+  padding-left: 100px;
+}
+
+section .container .middle-content .bloc-text{
+  color: white;
+}
+
+section .container .middle-content .bloc-text span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+section .container .middle-content .bloc-text h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 68px;
+  line-height: 109%;
+  margin:14px 0px
+}
+section .container .middle-content .bloc-text p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  margin: 25px 0px;
+  }
+section .container .middle-content .bloc-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section .container .middle-content .bloc-button .bloc-note {
+  padding: 10px 20px;
+  background-image: url();
+  background-size: 100% 100%;
+  width: 170px;
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+section .container .middle-content .bloc-button .book-note{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color:#303056;
+}
+section .container .middle-content .bloc-button .track-record {
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+}
+section .container .botton-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+section .container .botton-content .all-ghost-btn {
+  background-image:url();
+  padding: 10px 20px;
+  background-size:100% 100%;
+  width: 170px;
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .container .botton-content .all-ghost-btn a {
+  color: white;
+  font-style: normal;
+  font-weight: 600px;
+  font-size: 15px;
+}
+
+@media  screen and (max-width: 1100px) {
+  section {
+    height: 100%;
+  }
+  section .container{
+    padding: 20px 50px;
+  }
+  section .container .middle-content{
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+ 
+  } 
+
+section .contaire .middle-content .right {
+  padding-left: 0px;
+  max-width: 800px;
+}
+
+section .contaire .middle-content .left {
+  margin-top: 50px;
+  
+}
+section .contaire .bottton-content {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  section .header {
+    display: none ! important;
+  }
+  
+}
+@media  screen and (max-width: 600px) {
+  section .container .middle-content .bloc-text h1{
+  
+    font-size: 45px;
+  }
+}
+section .contaire .middle-content .left .imag {
+  width: 100% ;
+}
+  
+section .contaire .middle-content .left .info {
+  display: none;
+}
+section .contaire {
+  padding: 20px 20px;
+}
+
+@media screen and (max-width: 375px){
+  section .container .middle-content .bloc-button {
+    flex-direction: column ;
+    margin-top: 25px;
+  }
+  section .contaire .middle .bloc-button div:nth-child(1) {
+    margin-bottom: 30px;
+  }
+}    
+  
